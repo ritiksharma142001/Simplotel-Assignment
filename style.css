@@ -1,0 +1,249 @@
+/* Page 1*/
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.eot');
+    src: url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.eot?#iefix') format('embedded-opentype'),
+         url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.woff2') format('woff2'),
+         url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.woff') format('woff'),
+         url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.ttf') format('truetype'),
+         url('https://assets.microsoft.com/fonts/AvenirNextLTPro-Ultlt.svg#AvenirNextLTPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fff7af, #ffaff5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-size: 100vw 100vh;
+  }
+.main{
+    width:100%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #ff7272;
+    /* overflow: hidden; */
+    height: 3vw;
+    width: 100%;
+    align-items: center;
+    gap:6%;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+
+}
+
+/* Style the menu icon */
+.menu-icon img {
+    width: auto; /* Adjust the width as needed */
+    height: 1.7vw; /* Maintain aspect ratio */
+}
+  
+  
+/* Style the content section */
+.content {
+    display: flex; /* Use flexbox layout */
+    height: calc(100vh - 3vw);  /*Subtract the height of the navigation bar */
+    flex-direction: row;
+}
+
+/* Style the left content section */
+.left-content {
+    width:40%;
+    /* flex: 1;   */
+    padding: 10vw 8vh 10vw 8vh; 
+    justify-content: flex-start;
+}
+
+
+.lorem {
+    /* text-align: center; */
+    display: inline-block;
+    padding: 1vw 0 0.5vw 0;
+    margin: 0;
+}
+
+.lorem h1{
+    font-size: 3.5vw;
+    font-family: Avenir Next LT Pro', sans-serif;
+}
+
+.para {
+    /* text-align: justify; */
+    display: inline-block;
+    padding: 0.5vw 0 1vw 0;
+    margin: 0;
+}
+.para p{
+    font-size: 20px;
+}
+
+.btn {
+    /* text-align: center; */
+    display: inline-block;
+    padding: 2% 10%;
+    margin: 0;
+    background-color: #ff7272;
+    justify-content: center;
+}
+
+.btn button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color:white;
+    text-align: center;
+    
+}
+
+/* Style the right content section */
+.right-content {
+    background-image: url("HTML CSS Assignment/pexels-robin-stickel-70497.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+/* Style the image inside the right content */
+.right-content img {
+    height: 100%; /* Ensure the image doesn't exceed the container */
+    width: 100%; /* Maintain aspect ratio */
+}
+
+/*Page 2*/
+.whole {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 5%;
+}
+
+.left {
+    display: flex;
+    padding: 11vw 0 0 10vw;
+}
+
+.lleft{
+    padding-right: 3vh;
+}
+
+.up{
+    width: 35vh;
+    height: 14vw;
+    margin-bottom: 0.5vw;
+    background-image: url("HTML CSS Assignment/pexels-rachel-claire-6752433.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.down {
+    width: 35vh;
+    height: 14vw;
+    background-image: url("HTML CSS Assignment/pexels-eva-bronzini-6141651.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.rleft {
+    width: 35vh;
+    height: 28.5vw;
+    background-image: url("HTML CSS Assignment/pexels-mister-mister-3434523.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box{
+    width: 60vh;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    background-color: #ff7272;
+    justify-content: center;
+    padding: 1vw 3vh 1vw 3vh;
+    margin-top: 15vw;
+    margin-left: 0vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.click-container {
+    display: flex; /* Display the text and the image inline */
+    align-items: center; /* Align items vertically */
+}
+
+.box h3{
+    padding-bottom: 2vw;
+}
+
+.box h1{
+    font-size: 7vh;
+    margin: 0;
+    padding-bottom: 3vw;
+}
+.box p{
+    font-size: 3vh;
+    display: inline;
+    margin: 0;
+}
+
+.box img{
+    padding-left: 1.5vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .topnav {
+      height: auto;
+    }
+
+    .topnav a {
+      padding: 10px;
+    }
+
+    .content, .page2, .whole {
+      flex-direction: column;
+      padding-top:10%;
+    }
+
+    .left{
+        display: inline;
+        flex: none;
+    }
+    .lleft {
+        padding:0;
+    }
+    .left-content, .right-content, .right {
+      display: flex;
+      width: 100%;
+      margin: 0;
+    }
+
+    .lorem{
+        text-wrap: break-word;
+    }
+
+    .box img {
+      margin-left: 0;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+    }
+    .rleft, .up, .down {
+        width: auto;
+        height: 185px;
+        margin-bottom: 0.5vw;
+    }
+  }
